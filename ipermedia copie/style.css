@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Spline+Sans:wght@300&display=swap');
+
+body {
+    padding:0 2%;
+    margin: 0;
+font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    top: 0;
+}
+nav .profile {
+    display: flex;
+    align-items: center;
+}  
+nav .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+} 
+nav .profile h1 {
+    margin-left: 10px;
+    font-size: 20px;
+} 
+nav ul {
+    display: flex;
+    list-style-type:none;
+} 
+nav ul a{
+    text-decoration: none;
+} 
+    a:visited { 
+    text-decoration: none; 
+    color: black; 
+   }
+   a:hover { text-decoration: none; color:rgb(104, 102, 190); }
+nav ul li {
+    margin-left: 20px;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    font-size: 25px ;
+} 
+nav ul li:hover {
+    border-bottom-color: #000;
+} 
+.page-content {
+    background-color: white;
+    margin: 4%;
+} 
+.page-content header {
+    margin-top: 5%;
+    max-width: 100%;
+}
+.page-content header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family:'Arial', Helvetica, sans-serif;
+    font-size: max(5vw, 35px)
+}
+.page-content header p {
+    line-height: 30px;
+    color: #818181;
+}
+.page-content header button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	padding: 0;
+	font-size: 25px;
+	font-weight: bold;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.page-content header button:hover {
+    color: #ccc;
+    border-bottom-color: #000;
+}
+
+.carte {
+    margin: 25px auto;
+    height: auto;
+    width: 70%;
+    max-width: 700px;
+    min-width: 500px;
+    
+}
+.carte img{
+    width: 100%;
+    height: auto;
+}
+.page-content .projects-section {
+    margin-top: 6%;
+} 
+
+.page-content .projects-section h1 {
+    font-family:'Arial', Helvetica, sans-serif;
+    text-transform: uppercase;
+	font-size: 3vw;
+} 
+
+
+
+.page-content .projects-section .projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+.page-content .projects-section .project {
+	margin-right: 20px;
+	max-width: 195px;
+}
+.page-content .projects-section .project h4 {
+	margin: 0;
+}
+.page-content .projects-section .project .description {
+	font-size: 10px;
+}
+.page-content .projects-section .project .dates {
+	font-size: 13px;
+	color: rgb(145, 145, 145);
+}
+
+.page-content .map {
+    display: flex;
+	flex-wrap: wrap;
+}
+footer {
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color:rgb(104, 102, 190);
+    color: white;
+    padding: 10px; 
+    font-size: 15px ;   
+}
+footer .colonne p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+footer .colonne p:hover {
+    color: rgb(255, 158, 158);
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    nav {
+        justify-content: left;
+    }
+
+    .page-content {
+       
+        background-color: white;
+    } 
+
+    .page-content header h1 {
+        margin-top: 10%;
+        max-width: 50%;
+        justify-content: flex-start;
+    }
+    .carte {
+        max-width: 50%;
+    }    
+    .page-content .projects-section {
+		margin-top: 15%;
+	}
+	.page-content .projects-section h1 {
+		font-size: 1.5em;
+	}
+	.page-content .projects-section .project {
+		margin-right: 0;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.page-content .projects-section .project .description {
+		font-size: 13px;
+	}
+    
+	footer .column h3 {
+		font-size: 30px;
+	}
+    
+}
+
+
+
+
